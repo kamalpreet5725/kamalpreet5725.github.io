@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mother's Day Card</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    background-color: #ffe0ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+
+  .card {
+    text-align: center;
+    position: relative;
+  }
+
+  .heart {
+    width: 200px;
+    height: 200px;
+    background-color: #ff5e92;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: beat 1s infinite ease-in-out;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #ff5e92;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .heart::before {
+    top: -100px;
+    left: 0;
+  }
+
+  .heart::after {
+    top: 0;
+    left: 100px;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: rotate(-45deg) scale(1); }
+    50% { transform: rotate(-45deg) scale(1.1); }
+  }
+
+  .btn, .reset-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #ff5e92;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  .btn:hover, .reset-btn:hover {
+    background-color: #ffeaf3;
+  }
+
+  .content-box {
+    width: 110%;
+    max-width: 650px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .content-box h2 {
+    margin-bottom: 20px;
+    color: #b0004f;
+    font-size: 1.8rem;
+  }
+
+  #message {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    white-space: pre-line;
+    display: none;
+  }
+
+  .reset-btn {
+    margin-top: 30px;
+    display: none;
+    background-color: #fff0f5;
+    transform: none;
+    position: static;
+  }
+
+
+ 
+
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Heart -->
+    <div class="heart" id="heart">
+      <button class="btn" id="startBtn">Surprise Mom</button>
+    </div>
+
+    <!-- Content Box -->
+    <div class="content-box" id="contentBox">
+      <h2 id="popupText">Happy Mother's Day ❤️</h2>
+      <p id="message"></p>
+      
+      <button class="reset-btn" id="resetBtn">Back to Heart</button>
+    </div>
+  </div>
+
+  <script >const msg = `Maa, aaj main tere saamne dil se kuch kehna chahta hoon.
+Shayad main roz tere paas baith ke apne dil ki baat nahi keh paata.
+Shayad main zyada waqt apni duniya mein khoya rehta hoon.
+Shayad main har roz shaitani karta hoon, tujhe satata hoon…
+Lekin maa, yeh sach hai main tujhe utna
+ hi pyar karta hoon jitna ek beta apni maa se kar sakta hai.
+Tere bina main kuch bhi nahi hoon maa.
+Teri daant mein bhi mohabbat hoti hai,
+Teri chinta mein bhi dua chhupi hoti hai.
+Main jaanta hoon, main perfect nahi hoon.
+Galtiyan karta hoon, kabhi tujhe hurt bhi karta hoon,
+Lekin aaj main dil se kehna chahta hoon —
+Mujhe maaf kar dena maa.
+Tu meri har dua ka jawaab hai,
+Tu meri har kamyabi ke peeche khadi wo muskurahat
+ hai jo kabhi kisi ne nahi dekhi.
+Main chahta hoon tujhe duniya ki har khushi doon,
+Teri har thakan mita doon,
+Tere chehre pe hamesha muskan banaa ke rakhun.
+Maa, tu mera sab kuch hai.
+Teri jagah koi nahi le sakta.
+Main tujhe shabdon mein nahi samjha sakta —
+Bas itna kehna chahta hoon…
+
+I love you maa. Dil se. Hamesha. ❤️`;
+
+const message = document.getElementById("message");
+const popup = document.getElementById("popupText");
+const startBtn = document.getElementById("startBtn");
+const resetBtn = document.getElementById("resetBtn");
+const heart = document.getElementById("heart");
+const contentBox = document.getElementById("contentBox");
+
+
+let i = 0;
+const letters = msg.split("");
+
+function typeLetter() {
+  if (i < letters.length) {
+    message.innerHTML += letters[i];
+    i++;
+    setTimeout(typeLetter, 15);
+  } else {
+   
+    resetBtn.style.display = "inline-block";
+  }
+}
+
+startBtn.onclick = () => {
+  startBtn.style.display = "none";
+  heart.style.display = "none";
+  contentBox.style.display = "flex";
+  message.style.display = "block";
+  message.innerHTML = "";
+  i = 0;
+  setTimeout(typeLetter, 800);
+};
+
+resetBtn.onclick = () => {
+  i = 0;
+  message.innerHTML = "";
+  message.style.display = "none";
+  resetBtn.style.display = "none";
+  heart.style.display = "block";
+  contentBox.style.display = "none";
+  startBtn.style.display = "inline-block";
+
+};
+</script>
+
+</body>
+</html>
