@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Second Webpage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.mainnav {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 260px;
+  background-color: rgb(8, 8, 1);
+  color: white;
+}
+
+.mainnav li a {
+  text-decoration: none;
+  color: rgb(234, 231, 231);
+}
+
+.banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bannerimg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 80%;
+}
+
+.banner-overlay h1 {
+  color: orange;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.banner-overlay h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.banner-overlay p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* main */
+
+.main {
+  height: 70vh;
+   background-color: rgb(0, 0, 0);
+}
+
+.main h1 {
+  text-align: center;
+  color: orange;
+  padding-top: 50px;
+}
+
+.main p {
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(109, 109, 109);
+}
+
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+    background-color: rgb(0, 0, 0);
+  gap: 30px;
+  text-align: center;
+}
+
+.service-card {
+  width: 220px;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #f5b921;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img {
+  width: 50px;
+  height: 50px;
+}
+
+.service-card h3 {
+  color: #f57c00;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* main */
+
+
+/* About */
+
+/* Container for the whole section */
+.about {
+  padding: 40px 20px;
+    background-color: rgb(0, 0, 0);
+  font-family: 'Arial', sans-serif;
+  color: #edeaea;
+
+}
+
+/* Title styling */
+.about-title h1 {
+  font-size: 32px;
+  color: #ff7900; 
+  text-align: center;
+}
+
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 80%; 
+  text-align: center;
+margin-left: 160px;
+margin-top: 20px;
+
+}
+
+/* "VIEW MORE" link styling */
+.about p a {
+  color: #ff7900;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about p a:hover {
+  text-decoration: underline;
+}
+
+/* Video or image container */
+.about-video {
+  margin-top: 30px;
+  text-align: center; /* Center the video/image */
+}
+
+/* If using an <img> as a video placeholder */
+.about-video img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  margin-right: 515px;
+}
+
+/* Optional: If using <iframe> for YouTube or Vimeo video */
+.about-video iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+/* About */
+
+
+.stats-section {
+  background: url('bg.jpg') no-repeat center center/cover;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+}
+
+
+.stat-box {
+  width: 200px;
+  margin: 20px;
+}
+
+.stat-box .icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white; /* Optional */
+  padding: 10px;
+}
+
+.stat-box h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: normal;
+}
+
+.stat-box h1 {
+  font-size: 32px;
+  color: #ffa500; /* Orange like in your image */
+  margin: 0;
+}
+
+
+
+
+
+.associate-section {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  padding: 60px 50px;
+  flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+}
+
+.associate-left,
+.associate-right {
+  flex: 1;
+  min-width: 400px;
+}
+
+.associate-left h2,
+.associate-right h2 {
+  color: #f7941d;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: #d614ac;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 600px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.card-text h3 {
+ 
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-text p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.associate-right p {
+  color: #ebe6e6;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #333;
+}
+
+.read-more {
+  color: #f7941d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.rahul {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+   background-color: rgb(0, 0, 0);
+}
+
+.rahuld {
+  background-image: url(test_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.rahul-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.rahul-title {
+  margin-bottom: 10px;
+}
+
+
+.inter{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 170px;
+}
+
+
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-col h1,
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.enquire-btn {
+  background-color: #ff9900;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #ff9900;
+}
+
+.twitter-feed {
+  margin-top: 10px;
+}
+
+.facebook-embed-placeholder {
+  background-color: #333;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons i {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #ff9900;
+}
+
+.footer-legal p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+    </style>
+
+  </head>
+  <body>
+   
+  
+
+
+      <nav>
+        <div>
+          <ul class="mainnav">
+            <li><a href="task2.html">Home</a></li>
+            <li><a href="task2about.html">About Us </a></li>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login </a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="banner-section">
+      <img class="bannerimg" src="https://t3.ftcdn.net/jpg/06/06/54/92/360_F_606549277_BMzgu4QoNfqHDkmUgngJrFHuxZXvkS7d.jpg" alt="" />
+
+      <div class="banner-overlay">
+        
+        <h1>MUSCLE FIT</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis quia adipisci veritatis vitae, recusandae minima impedit perferendis molestiae aperiam?
+        </p>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Our  Services </h1>
+   
+
+      <div class="services-container">
+        <div class="service-card">
+          <div class="icon-circle"><img src="icon_01.png" alt="" /></div>
+          <h3>Courses Offered</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia a hic natus maxime sunt? Ipsa est dolorem minima tempora ipsam.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle"><img src="icon_02.png" alt="" /></div>
+          <h3>Workouts</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic minus quisquam, id quibusdam perferendis et facere odit pariatur ullam dolorum!
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle"><img src="icon_03.png" alt="" /></div>
+          <h3>Become Our Partner</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, autem voluptatum. Saepe velit laudantium facilis vitae omnis qui eligendi nihil.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle"><img src="icon_04.png" alt="" /></div>
+          <h3> Memberships</h3>
+          <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic minus quisquam, id quibusdam perferendis et facere odit pariatur ullam dolorum!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+
+    <section class="about">
+      <div class="about-title">
+        <h1>ABOUT US</h1>
+      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repudiandae adipisci sit, voluptatibus deserunt error pariatur aspernatur corrupti excepturi rem numquam voluptates earum, nulla maiores alias quia odio labore laborum expedita amet voluptate reiciendis totam? Nemo rem, eos vero unde, sit in rerum itaque sed aperiam exercitationem assumenda impedit vel.
+      </p>
+      <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nisi dolore eos, molestias ut, error nesciunt corporis optio asperiores nemo molestiae mollitia eligendi aliquid. Dolores, recusandae ipsa! Omnis, repellendus. Commodi eligendi mollitia ad earum ipsam animi obcaecati iusto odit inventore! <a href="#">VIEW MORE</a>
+      </p>
+      
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-box">
+        <div class="icon">
+          <img src="bgicon.png" alt="icon" style="background-color: yellow" />
+        </div>
+        <h3>Happy Students</h3>
+        <h1>1000+</h1>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon">
+          <img
+            src="icon2.png"
+            alt="icon"
+            style="background-color: rgb(201, 54, 10)"
+          />
+        </div>
+        <h3>Happy Students</h3>
+        <h1>1000+</h1>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon">
+          <img
+            src="icon3.png"
+            alt="icon"
+            style="background-color: rgb(13, 159, 192)"
+          />
+        </div>
+        <h3>Happy Students</h3>
+        <h1>1000+</h1>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon">
+          <img
+            src="icon4.png"
+            alt="icon"
+            style="background-color: rgb(218, 22, 195)"
+          />
+        </div>
+        <h3>Happy Students</h3>
+        <h1>1000+</h1>
+      </div>
+    </section>
+
+
+
+    <section class="associate-section">
+      <div class="associate-left">
+        <h2>Join WITH US</h2>
+
+        <div class="card">
+          <img src="icon1.png" alt="Trainee Icon" class="card-icon" />
+          <div class="card-text">
+            <h3>TRAINEE</h3>
+            <p>
+              Join us as a Trainee and you will be exposed to complex global
+              transactions. Join us today.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="icon2.png"
+            alt="Training Center Icon"
+            class="card-icon"
+          />
+          <div class="card-text">
+            <h3>TRAINING CENTER</h3>
+            <p>
+              Join the Skill India Mission by joining the hands with us as
+              Associate training Centre.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="icon3.png"
+            alt="Placement Icon"
+            class="card-icon"
+          />
+          <div class="card-text">
+            <h3>PLACEMENT PROGRAM</h3>
+            <p>
+              Registered with us to search through a database of skilled
+              workforce to meet industry requirement
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="associate-right">
+        <h2>NEED OF GYM</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in officia delectus expedita nihil, praesentium possimus, reprehenderit numquam, velit rerum vel atque exercitationem sunt ipsa similique doloremque corrupti quae. Assumenda?
+        </p>
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quam! Quam animi, doloremque temporibus repellendus nobis natus quidem error saepe asperiores ad, nulla similique sint modi eligendi voluptas accusamus ut.
+
+        </p>
+        
+        <p class="highlight">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias mollitia maxime placeat exercitationem! Blanditiis quas molestiae eius assumenda, perferendis quidem magni, hic error repellendus deserunt excepturi praesentium unde voluptatum voluptas!
+          <span class="read-more">Read More</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- About section -->
+
+    <section class="rahul">
+      <div class="rahuld ">
+          <img src="test.png"alt="Training Center Icon" class="rahul-img"/>
+          <div class="rahul-title">
+            <h3>Kamalpreet Singh</h3>
+          </div>
+          <p>
+            Vocational Institute in India. Great skills that make you self dependent in life..
+          </p>
+        </div>
+
+      </section>
+      
+
+
+     <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col contact">
+      <h3>OM Institute of Vocational Education & Training (OIVET)</h3>
+      <p>📍 Address: Showroom No. A-204, 2nd Floor, Tower-A, AK Trade Center,<br>Ambala - Chandigarh Road, Zirakpur-140603(Pb.)</p>
+      <p>📞 +91 72729-00039<br>+91 79093-90039<br>+91 96599-00039<br>+91 99914-42403</p>
+      <p>📧 info@oivetindia.com<br>oivetindia@gmail.com</p>
+      <p>☎️ Toll Free: 1800-890-4080</p>
+      <button class="enquire-btn">ENQUIRE NOW</button>
+    </div>
+
+    <div class="footer-col links">
+      <h1>Quick Links</h1>
+      <ul class="footer-links">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Mission</li>
+        <li>All Courses</li>
+        <li>Disclaimer</li>
+        <li>Privacy Policy</li>
+        <li>Evaluation Procedure</li>
+        <li>Copyright</li>
+        <li>Downloads</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-col twitter">
+      <h3>Join Us on Twitter</h3>
+      <div class="twitter-feed">
+        <a class="twitter-timeline" data-height="250" href="https://twitter.com/OIVET_INDIA?ref_src=twsrc%5Etfw">Tweets by OIVET_INDIA</a>
+      </div>
+    </div>
+
+    <div class="footer-col facebook">
+      <h3>Join With Facebook</h3>
+      <div class="facebook-embed-placeholder">
+        <img src="download.jpeg" alt="Facebook Widget Preview" style="width:100%; max-width:450px;height: 260px; border-radius: 20px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-pinterest-p"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <div class="footer-legal">
+      <p>COPYRIGHT &nbsp;&nbsp;&nbsp; PRIVACY POLICY</p>
+      <p>Copyright © OIVET. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
