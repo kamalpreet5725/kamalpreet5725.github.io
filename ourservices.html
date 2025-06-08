@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERBAL HARMONY - Our Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navcontainer">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Our Services</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#">Ayurvedic Treatments</a></li>
+              <li><a href="#">Therapy Session</a></li>
+              <li><a href="#">Wellness Packages</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#">Diets</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/banner.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-0"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/banner2.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-1"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/banner3.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-2"></div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <main>
+      <div class="cardcontainer">
+        <div class="cont">
+          <h1>Our Services</h1>
+        </div>
+        <div class="new-card-grid">
+          <div class="new-card" id="new-card1">
+            <div class="new-icon">
+              <img src="images/s1.jpg" alt="Vamana" />
+            </div>
+            <h3 class="new-title red-text">Vamana</h3>
+            <div class="extra-card" id="extra-card1">
+              <h1>Vamana</h1>
+              <p>
+                Purpose: To remove excess Kapha dosha from the respiratory and
+                gastrointestinal tract.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Asthma</li>
+                <li>Bronchitis</li>
+                <li>Cough</li>
+                <li>Cold & sinus congestion</li>
+                <li>Obesity</li>
+                <li>Skin disorders like psoriasis</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  Pre-procedure includes <strong>Snehana</strong> (internal
+                  oleation with ghee) and <strong>Swedana</strong> (sweating).
+                </li>
+                <li>
+                  Then a herbal decoction is given to induce vomiting in a
+                  controlled and supervised manner.
+                </li>
+                <li>Removes mucus and toxins from the stomach and lungs.</li>
+              </ul>
+
+              <h3>Benifits</h3>
+              <ul>
+                <li>Clears chest congestion</li>
+                <li>Improves digestion</li>
+                <li>Enhances mental clarity</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="new-card" id="new-card2">
+            <div class="new-icon">
+              <img src="images/s2.jpg" alt="Virechana" />
+            </div>
+            <h3 class="new-title red-text">Virechana</h3>
+            <div class="extra-card" id="extra-card2">
+              <h1>Virechana</h1>
+              <p>
+                Purpose: To eliminate excess Pitta dosha from the liver,
+                gallbladder, and intestines.
+              </p>
+
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Liver disorders (hepatitis, fatty liver)</li>
+                <li>Skin diseases (eczema, acne, dermatitis)</li>
+                <li>Hyperacidity</li>
+                <li>Chronic fever</li>
+                <li>Jaundice</li>
+              </ul>
+
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  After oleation and sweating, a herbal laxative is given to
+                  induce controlled bowel movements.
+                </li>
+                <li>Removes bile toxins and clears heat from the body.</li>
+              </ul>
+
+              <h3>Benefits</h3>
+              <ul>
+                <li>Detoxifies the liver</li>
+                <li>Enhances metabolism</li>
+                <li>Improves skin glow and clarity</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="new-card" id="new-card3">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Basti</h3>
+            <div class="extra-card" id="extra-card3">
+              <h1>Basti</h1>
+              <p>
+                Purpose: To balance Vata dosha in the colon (the main seat of
+                Vata).
+              </p>
+
+              <h3>Types</h3>
+              <ul>
+                <li>Anuvasana Basti – Oil-based enema</li>
+                <li>Niruha Basti – Decoction-based enema</li>
+              </ul>
+
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Constipation</li>
+                <li>Arthritis & joint pain</li>
+                <li>Sciatica</li>
+                <li>Lower back pain</li>
+                <li>Neurological disorders</li>
+                <li>Hormonal imbalance</li>
+              </ul>
+
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  Medicated oils or herbal decoctions are introduced through the
+                  rectum.
+                </li>
+                <li>
+                  These nourish and cleanse the colon, calm the nervous system,
+                  and lubricate joints.
+                </li>
+              </ul>
+
+              <h3>Benefits</h3>
+              <ul>
+                <li>Lubricates intestines</li>
+                <li>Relieves pain and stiffness</li>
+                <li>Balances hormonal and nervous functions</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="new-card" id="new-card4">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Raktamokshana</h3>
+            <div class="extra-card" id="extra-card4">
+              <h1>Raktamokshana</h1>
+              <p>
+                Purpose: Detoxify Rakta Dhatu (blood) to treat diseases caused
+                by blood impurities.
+              </p>
+
+              <h3>Types</h3>
+              <ul>
+                <li>Siravyadha (vein puncture)</li>
+                <li>
+                  Jalaukavacharana (leech therapy) – especially effective in
+                  localized issues
+                </li>
+              </ul>
+
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Skin disorders (eczema, psoriasis, acne)</li>
+                <li>Gout</li>
+                <li>Varicose veins</li>
+                <li>Hypertension</li>
+                <li>Chronic non-healing ulcers</li>
+              </ul>
+
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  Impure blood is released either with a sterile needle or using
+                  leeches to draw toxic blood.
+                </li>
+                <li>Reduces inflammation and improves oxygenation.</li>
+              </ul>
+
+              <h3>Benefits</h3>
+              <ul>
+                <li>Clears heat and toxins from blood</li>
+                <li>Improves complexion and immunity</li>
+                <li>Alleviates swelling and inflammation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="new-card" id="new-card5">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Nasya</h3>
+            <div class="extra-card" id="extra-card5">
+              <h1>Nasya</h1>
+              <p>
+                Purpose: To cleanse and rejuvenate the head region by
+                administering herbal oils or powders through the nostrils.<br />
+                <strong>Dosha Targeted:</strong> Primarily Kapha and Vata in the
+                head and neck area.
+              </p>
+
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Sinusitis</li>
+                <li>Allergic rhinitis</li>
+                <li>Migraines</li>
+                <li>Memory issues</li>
+              </ul>
+
+              <h3>How it works</h3>
+              <ul>
+                <li>The face is gently massaged and steamed.</li>
+                <li>
+                  Medicated oils, ghee, or herbal powders are then instilled
+                  into each nostril in a controlled dosage.
+                </li>
+                <li>
+                  The patient is guided to gently inhale and expel mucus and
+                  toxins.
+                </li>
+              </ul>
+
+              <h3>Benefits</h3>
+              <ul>
+                <li>Clears nasal and sinus congestion</li>
+                <li>Enhances mental clarity and focus</li>
+                <li>Prevents early greying and hair loss</li>
+                <li>Strengthens sensory organs (eyes, ears, nose)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="new-card" id="new-card6">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Shirodhara</h3>
+            <div class="extra-card" id="extra-card6">
+              <h1>Shirodhara</h1>
+              <p>
+                Purpose: Deep relaxation therapy that pacifies Vata and Pitta,
+                and calms the nervous system.<br />
+                <strong>Name Meaning:</strong> Shiro = head, Dhara = flow.
+              </p>
+
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Stress, anxiety, and depression</li>
+                <li>Insomnia</li>
+                <li>High blood pressure</li>
+                <li>Hormonal imbalances</li>
+                <li>PTSD or emotional trauma</li>
+              </ul>
+
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  A stream of warm medicated oil, milk, or buttermilk is gently
+                  poured in a rhythmic pattern over the forehead (Ajna Chakra
+                  area).
+                </li>
+                <li>The procedure typically lasts 30–60 minutes.</li>
+              </ul>
+
+              <h3>Benefits</h3>
+              <ul>
+                <li>Promotes deep relaxation</li>
+                <li>Improves quality of sleep</li>
+                <li>Balances brain chemistry</li>
+                <li>Rejuvenates the mind and emotions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-heading">
+            Herbal Harmony<br />Natural Wellness Clinic
+          </h3>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Therapies</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Our Treatments</h3>
+          <div class="footer-tags">
+            <span class="tag">Ayurvedic</span>
+            <span class="tag">Herbal Remedies</span>
+            <span class="tag">Detox & Cleansing</span>
+            <span class="tag">Stress Relief</span>
+            <span class="tag">Skin Care</span>
+            <span class="tag">Pain Management</span>
+            <span class="tag">Digestive Health</span>
+            <span class="tag">Immune Boosting</span>
+            <span class="tag">Holistic Consultations</span>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Visit Us</h3>
+          <div class="footer-address">
+            <p>📍 123 Green Leaf Lane, Herbal City, State 56789</p>
+            <p>📍 456 Nature Way, Wellness Town, State 12345</p>
+          </div>
+          <div class="footer-buttons">
+            <a href="#" class="footer-btn">Book an Appointment</a><br />
+            <a href="tel:+919811654334" class="footer-btn"
+              >Call us: +91-9811654334</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2024 Herbal Harmony | Crafted with <span class="heart">🌿</span> by
+        <span>TripClap</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
