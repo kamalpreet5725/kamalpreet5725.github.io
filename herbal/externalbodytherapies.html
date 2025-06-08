@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERBAL HARMONY - Our Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navcontainer">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Our Services</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="#">Ayurvedic Treatments</a></li>
+              <li><a href="#">Therapy Session</a></li>
+              <li><a href="#">Wellness Packages</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#">Diets</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/banner.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-0"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/banner2.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-1"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/banner3.jpg" alt="" />
+          <div class="slide-dynamic-content" id="content-2"></div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <main>
+      <div class="cardcontainer">
+        <div class="cont">
+          <h1>Our Services</h1>
+        </div>
+        <div class="new-card-grid">
+          <div class="new-card" id="new-card1">
+            <div class="new-icon">
+              <img src="images/s1.jpg" alt="Vamana" />
+            </div>
+            <h3 class="new-title red-text">Abhyanga (Oil Massage)</h3>
+            <div class="extra-card" id="extra-card1">
+              <h1>Abhyanga (Oil Massage)</h1>
+              <p>
+                Purpose: A full-body warm oil massage that nourishes tissues,
+                improves circulation, and relieves fatigue and stress.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Stress and fatigue</li>
+                <li>Dry or rough skin</li>
+                <li>Poor circulation</li>
+                <li>Muscle stiffness</li>
+                <li>Daily rejuvenation</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  Warm herbal oil is gently massaged over the body using
+                  rhythmic strokes.
+                </li>
+                <li>
+                  The oils penetrate deep into tissues, aiding detoxification
+                  and lubrication.
+                </li>
+                <li>Customized to body type (dosha) for holistic balance.</li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Reduces stress and tension</li>
+                <li>Improves skin tone and texture</li>
+                <li>Promotes better sleep</li>
+                <li>Boosts immunity</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="new-card" id="new-card2">
+            <div class="new-icon">
+              <img src="images/s2.jpg" alt="Virechana" />
+            </div>
+            <h3 class="new-title red-text">Virechana</h3>
+            <div class="extra-card" id="extra-card2">
+              <h1>Shirodhara</h1>
+              <p>
+                Purpose: To calm the mind and nervous system by gently pouring
+                medicated oil on the forehead.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Stress and anxiety</li>
+                <li>Insomnia</li>
+                <li>High blood pressure</li>
+                <li>Depression</li>
+                <li>Hormonal imbalance</li>
+                <li>Mental fatigue</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  A steady stream of warm oil is poured onto the forehead in a
+                  rhythmic manner.
+                </li>
+                <li>
+                  Stimulates the third eye (Ajna Chakra) and relaxes brain
+                  waves.
+                </li>
+                <li>
+                  Session lasts 30–60 minutes under therapist supervision.
+                </li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Deep mental relaxation</li>
+                <li>Better sleep patterns</li>
+                <li>Balances Vata and Pitta dosha</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="new-card" id="new-card3">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Pinda Sweda (Bolus Massage</h3>
+            <div class="extra-card" id="extra-card3">
+              <h1>Pinda Sweda (Bolus Massage)</h1>
+              <p>
+                Purpose: A herbal bolus massage to relieve inflammation,
+                stiffness, and pain in joints and muscles.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Arthritis</li>
+                <li>Joint pain</li>
+                <li>Muscle spasms</li>
+                <li>Back pain</li>
+                <li>Sports injuries</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>Herbal powders or leaves are tied in cloth boluses.</li>
+                <li>
+                  Boluses are heated in medicated oil and massaged over the
+                  body.
+                </li>
+                <li>
+                  The heat and herbs penetrate deeply to reduce pain and
+                  stiffness.
+                </li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Reduces inflammation and stiffness</li>
+                <li>Promotes joint mobility</li>
+                <li>Detoxifies skin and muscles</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="new-card" id="new-card4">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Udwartanam</h3>
+            <div class="extra-card" id="extra-card4">
+              <h1>Udwartanam (Herbal Powder Massage)</h1>
+              <p>
+                Purpose: A dry or oil-based herbal powder massage to improve
+                skin texture and reduce fat.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Obesity</li>
+                <li>Water retention</li>
+                <li>Cellulite</li>
+                <li>Dull skin</li>
+                <li>Metabolic sluggishness</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  Ayurvedic powders are rubbed over the body in upward strokes.
+                </li>
+                <li>The friction improves circulation and scrubs dead skin.</li>
+                <li>Powders are selected based on individual body type.</li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Improves skin glow</li>
+                <li>Helps in weight loss</li>
+                <li>Reduces excessive sweat and oiliness</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="new-card" id="new-card5">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Kati Basti</h3>
+            <div class="extra-card" id="extra-card5">
+              <h1>Kati Basti</h1>
+              <p>
+                Purpose: A localized oil therapy to treat lower back pain and
+                spinal issues.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Lower back pain</li>
+                <li>Lumbar spondylosis</li>
+                <li>Sciatica</li>
+                <li>Disc herniation</li>
+                <li>Stiffness in back</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  A dough ring is placed on the lower back and filled with warm
+                  medicated oil.
+                </li>
+                <li>The oil is retained for a specific duration.</li>
+                <li>
+                  Heat and herbs penetrate deep to soothe tissues and nerves.
+                </li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Relieves back stiffness</li>
+                <li>Strengthens spine muscles</li>
+                <li>Nourishes vertebral discs</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="new-card" id="new-card6">
+            <div class="new-icon">
+              <img src="images/s3.jpg" alt="Basti" />
+            </div>
+            <h3 class="new-title red-text">Janu Basti</h3>
+            <div class="extra-card" id="extra-card6">
+              <h1>Janu Basti</h1>
+              <p>
+                Purpose: An oil therapy for chronic knee pain and joint
+                disorders.
+              </p>
+              <h3>Ideal For</h3>
+              <ul>
+                <li>Knee osteoarthritis</li>
+                <li>Joint degeneration</li>
+                <li>Knee stiffness</li>
+                <li>Post-injury recovery</li>
+                <li>Runners or elderly individuals</li>
+              </ul>
+              <h3>How it works</h3>
+              <ul>
+                <li>
+                  A ring of dough is placed around the knees and filled with
+                  warm medicated oil.
+                </li>
+                <li>The oil is retained, then massaged over the area.</li>
+                <li>Therapy nourishes ligaments and reduces pain.</li>
+              </ul>
+              <h3>Benifits</h3>
+              <ul>
+                <li>Lubricates knee joints</li>
+                <li>Reduces pain and swelling</li>
+                <li>Improves knee flexibility</li>
+              </ul>
+              <button class="service-btn">
+                <a href="#">Book An Appointment</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-heading">
+            Herbal Harmony<br />Natural Wellness Clinic
+          </h3>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Therapies</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Our Treatments</h3>
+          <div class="footer-tags">
+            <span class="tag">Ayurvedic</span>
+            <span class="tag">Herbal Remedies</span>
+            <span class="tag">Detox & Cleansing</span>
+            <span class="tag">Stress Relief</span>
+            <span class="tag">Skin Care</span>
+            <span class="tag">Pain Management</span>
+            <span class="tag">Digestive Health</span>
+            <span class="tag">Immune Boosting</span>
+            <span class="tag">Holistic Consultations</span>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-heading">Visit Us</h3>
+          <div class="footer-address">
+            <p>📍 123 Green Leaf Lane, Herbal City, State 56789</p>
+            <p>📍 456 Nature Way, Wellness Town, State 12345</p>
+          </div>
+          <div class="footer-buttons">
+            <a href="#" class="footer-btn">Book an Appointment</a><br />
+            <a href="tel:+919811654334" class="footer-btn"
+              >Call us: +91-9811654334</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2024 Herbal Harmony | Crafted with <span class="heart">🌿</span> by
+        <span>TripClap</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
